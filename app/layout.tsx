@@ -1,7 +1,10 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Rajdhani } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Rajdhani({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700']
+})
 
 export const metadata = {
   title: 'Create Next App',
