@@ -19,7 +19,7 @@ const Home = async () => {
       <div className='mt-5 grid grid-cols-1 md: grid-cols-2 lg:grid-cols-3 gap-8'>
         {projects.map((project) => (
           <Link href={`/projects/${project.slug}`} key={project._id} 
-            className='border borger-gray-200 rounded-lg p-2 hover:scale-105 hover:border-gray-500 transition'>
+            className='border border-gray-200 rounded-lg p-2 hover:scale-105 hover:border-gray-500 transition'>
             {project.image && (
               <Image 
                 src={project.image}
