@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import './globals.css'
+import '../globals.css'
 import { Rajdhani } from 'next/font/google'
 
 const inter = Rajdhani({
@@ -19,17 +19,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} max-w-3xl mx-auto py-10`}>
-      <header>
-        <Link href='/' className='bg-gradient-to-r 
-          from-blue-500 
-          to-red-400 
-          bg-clip-text 
-          text-transparent text-2xl font-bold'>
-          iR
-        </Link>
-      </header>
-      <main className='py-20'>{children}</main>
+      <body className={inter.className}>
+      {children}
       </body>
     </html>
   )
